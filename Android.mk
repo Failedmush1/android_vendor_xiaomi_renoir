@@ -4,6 +4,8 @@
 
 LOCAL_PATH := $(call my-dir)
 
+ifeq ($(TARGET_DEVICE),renoir)
+
 $(call add-radio-file-sha1-checked,radio/abl.img,8263504cda85ca1bb4fb1c3c345b22c49919f803)
 $(call add-radio-file-sha1-checked,radio/aop.img,53f3f005ef08b0904b86fdd6f04b3e5bb95b4c1a)
 $(call add-radio-file-sha1-checked,radio/bluetooth.img,433c7612bb59f4c7b161d997ff5e39c8c2b23aaf)
@@ -21,3 +23,5 @@ $(call add-radio-file-sha1-checked,radio/tz.img,1a70b67054f357b13aed31e1e08abb60
 $(call add-radio-file-sha1-checked,radio/uefisecapp.img,5772c2b8ffdb2c6ad7a27e053faa297df893c9d8)
 $(call add-radio-file-sha1-checked,radio/xbl.img,8a17f5445becf812fe909d4285a996121f137b27)
 $(call add-radio-file-sha1-checked,radio/xbl_config.img,1a6f484c3edacac44209289b5d70e92ee4f3527c)
+
+endif

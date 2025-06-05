@@ -17,6 +17,6 @@ AB_OTA_PARTITIONS += \
     qupfw \
     shrm \
     tz \
-    uefisecapp \Add commentMore actions
+    uefisecapp \
     xbl \
     xbl_config

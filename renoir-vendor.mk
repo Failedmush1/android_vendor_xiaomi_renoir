@@ -62,6 +62,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/renoir/proprietary/vendor/etc/camera/com.xiaomi_k9_mecp_for_nocali.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/com.xiaomi_k9_mecp_for_nocali.bin \
     vendor/xiaomi/renoir/proprietary/vendor/etc/camera/eisoverridesettings.txt:$(TARGET_COPY_OUT_VENDOR)/etc/camera/eisoverridesettings.txt \
     vendor/xiaomi/renoir/proprietary/vendor/etc/camera/ellc.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/ellc.bin \
+    vendor/xiaomi/renoir/proprietary/vendor/etc/camera/facedetectpp_0_5_2_model:$(TARGET_COPY_OUT_VENDOR)/etc/camera/facedetectpp_0_5_2_model \
     vendor/xiaomi/renoir/proprietary/vendor/etc/camera/intsense_config_optical_zoom_2sat.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/intsense_config_optical_zoom_2sat.bin \
     vendor/xiaomi/renoir/proprietary/vendor/etc/camera/mibokeh_855_opencl.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/mibokeh_855_opencl.bin \
     vendor/xiaomi/renoir/proprietary/vendor/etc/camera/mibokeh_855_parameter.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/mibokeh_855_parameter.bin \
@@ -131,6 +132,9 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/renoir/proprietary/vendor/etc/display/DPU720.xml:$(TARGET_COPY_OUT_VENDOR)/etc/display/DPU720.xml \
     vendor/xiaomi/renoir/proprietary/vendor/etc/display/DPU7__.xml:$(TARGET_COPY_OUT_VENDOR)/etc/display/DPU7__.xml \
     vendor/xiaomi/renoir/proprietary/vendor/etc/elliptic_sensor.xml:$(TARGET_COPY_OUT_VENDOR)/etc/elliptic_sensor.xml \
+    vendor/xiaomi/renoir/proprietary/vendor/etc/felica/common.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/felica/common.cfg \
+    vendor/xiaomi/renoir/proprietary/vendor/etc/felica/mfm.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/felica/mfm.cfg \
+    vendor/xiaomi/renoir/proprietary/vendor/etc/felica/mfs.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/felica/mfs.cfg \
     vendor/xiaomi/renoir/proprietary/vendor/etc/gpfspath_oem_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/gpfspath_oem_config.xml \
     vendor/xiaomi/renoir/proprietary/vendor/etc/init/android.hardware.bluetooth@1.0-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.bluetooth@1.0-service-qti.rc \
     vendor/xiaomi/renoir/proprietary/vendor/etc/init/android.hardware.drm@1.3-service.widevine.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.drm@1.3-service.widevine.rc \
@@ -769,6 +773,7 @@ PRODUCT_PACKAGES += \
     lib-rtpsl \
     libAF \
     libBlinkStub \
+    libFaceDetectpp-0.5.2 \
     libFlickerDet \
     libGPQTEEC_vendor \
     libGPTEE_vendor \
@@ -845,6 +850,7 @@ PRODUCT_PACKAGES += \
     libdpps \
     libdrmfs \
     libdrmtime \
+    libfacedet \
     libfocus \
     libhdr_tm \
     libhdrdynamic \
@@ -1196,6 +1202,10 @@ PRODUCT_PACKAGES += \
     IWlanService \
     SoterService \
     TimeService \
+    MobileFeliCaClient \
+    MobileFeliCaMenuMainApp \
+    MobileFeliCaSettingApp \
+    MobileFeliCaWebPluginBoot \
     QtiTelephonyService \
     WfdService \
     dpmserviceapp \
